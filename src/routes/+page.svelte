@@ -9,7 +9,7 @@
   const mail = 'dev@robingebert.com';
 </script>
 
-<div class="flex flex-col items-center justify-center min-h-screen p-4">
+<div class="flex flex-col items-center justify-evenly min-h-[90vh] p-4">
   <HeroCard
     {avatar}
     {name}
@@ -19,4 +19,7 @@
     {githubUrl}
     {mail}
   />
+  <div>
+    
+  </div>
 </div>

@@ -15,15 +15,15 @@
     class="relative bg-base-300 shadow-xl rounded-2xl w-full max-w-xl pt-16 pb-6 px-6"
 >
     <div
-        class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-32 h-32 rounded-full bg-base-200 overflow-hidden"
+        class="absolute -top-16 left-1/2 transform -translate-x-1/2 w-36 h-36 rounded-full bg-base-200 overflow-hidden"
     >
         <img src={avatar} alt="Avatar" class="w-full h-full object-cover" />
     </div>
 
-    <div class="mt-16 text-center">
+    <div class="mt-12 text-center">
         <h1 class="text-2xl font-semibold mb-2">{name}</h1>
         <p class="text-base-content/70 mb-4">{subtitle}</p>
-        <p class="text-base-content mt-4 mb-8">{description}</p>
+        <p class="text-base-content mt-8 mb-8">{description}</p>
 
         <div class="flex justify-center space-x-4">
             <a
