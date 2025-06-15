@@ -1,14 +1,8 @@
 <script lang="ts">
     import { Instagram, Github, Mail } from "@lucide/svelte";
 
-
-    export let avatar: string;
-    export let name: string;
-    export let subtitle: string;
-    export let instagramUrl: string;
-    export let githubUrl: string;
-    export let mail: string;
-    export let description: string;
+	let { data } = $props();
+    
 </script>
 
 <div
@@ -17,45 +11,48 @@
     <div
         class="absolute -top-16 left-1/2 transform -translate-x-1/2 w-36 h-36 rounded-full bg-base-200 overflow-hidden"
     >
-        <img src={avatar} alt="Avatar" class="w-full h-full object-cover" />
+        <img src={data.avatar} alt="Avatar" class="w-full h-full object-cover" />
     </div>
 
     <div class="mt-12 text-center">
-        <h1 class="text-2xl font-semibold mb-2">{name}</h1>
-        <p class="text-base-content/70 mb-4">{subtitle}</p>
-        <p class="text-base-content mt-8 mb-8">{description}</p>
+        <h1 class="text-2xl font-semibold mb-2">{data.name}</h1>
+        <p class="text-base-content/70 mb-4">{data.subtitle}</p>
+        <p class="text-base-content mt-8 mb-8">{data.description}</p>
 
         <div class="flex justify-center space-x-4">
             <a
-                href={instagramUrl}
+                href={data.instagramUrl}
                 target="_blank"
                 rel="noopener"
                 aria-label="Instagram"
+                class="hover:scale-110 animate-wiggle transition-colors animation-delay-200"
             >
             <Instagram
-                class="w-8 h-8 text-accent hover:scale-110 transition-colors" />
+                class="w-8 h-8 text-accent transition-colors" />
             </a>
 
 
             <a
-                href={githubUrl}
+                href={data.githubUrl}
                 target="_blank"
                 rel="noopener"
                 aria-label="GitHub"
+                class="hover:scale-110 animate-wiggle transition-colors animation-delay-400"
             >
             <Github
-                class="w-8 h-8 text-secondary hover:scale-110 transition-colors" />
+                class="w-8 h-8 text-secondary transition-colors" />
             </a>
-            {#if mail}
+            {#if data.mail}
             <a
-                href={`mailto:${mail}`}
+                href={`mailto:${data.mail}`}
                 target="_blank"
                 rel="noopener"
                 aria-label="Email"
+                class="hover:scale-110 animate-wiggle transition-colors animation-delay-600"
                 >
 
             <Mail
-                class="w-8 h-8 text-primary hover:scale-110 transition-colors" />
+                class="w-8 h-8 text-primary transition-colors" />
             </a>
             {/if}
         </div>

@@ -18,28 +18,30 @@
 		/>
 	{/if}
 </svelte:head>
-
-<div
-	class="p-6 mt-20 max-w-4xl mx-auto bg-base-200 rounded-xl shadow-md space-y-4"
->
-	<h1 class="text-3xl font-bold">{data.meta.title}</h1>
-	{#if data.meta.date}
-		<p class="text-sm text-base-content/70">
-			{new Date(data.meta.date).toLocaleDateString('en-US', {
-				year: 'numeric',
-				month: 'long',
-				day: 'numeric'
-			})}
-		</p>
-	{/if}
-	{#if data.meta.tags && data.meta.tags.length > 0}
-		<p class="text-sm text-base-content/70">
-			{#each data.meta.tags.split(',') as word}
-				<span class="badge badge-secondary ml-1">{word.trim()}</span>
-			{/each}
-		</p>
-	{/if}
-	<div class="prose">
-		<data.content />
+<div class="p-4">
+	<div
+		class="p-6 2xl:mt-12 mt-4 max-w-4xl mx-auto bg-base-200 rounded-xl shadow-md space-y-4"
+	>
+		<h1 class="text-3xl font-bold">{data.meta.title}</h1>
+		{#if data.meta.date}
+			<p class="text-sm text-base-content/70">
+				{new Date(data.meta.date).toLocaleDateString("en-US", {
+					year: "numeric",
+					month: "long",
+					day: "numeric",
+				})}
+			</p>
+		{/if}
+		{#if data.meta.tags && data.meta.tags.length > 0}
+			<p class="text-sm text-base-content/70">
+				{#each data.meta.tags.split(",") as word}
+					<span class="badge badge-secondary ml-1">{word.trim()}</span
+					>
+				{/each}
+			</p>
+		{/if}
+		<div class="prose">
+			<data.content />
+		</div>
 	</div>
 </div>

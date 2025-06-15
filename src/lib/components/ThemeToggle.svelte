@@ -6,7 +6,7 @@
 
   const isDark = derived(theme, ($theme) => $theme === 'dark');
 
-  let checked = false;
+  let checked = $state(false);
 
   onMount(() => {
     const unsubscribe = isDark.subscribe((d) => {
@@ -21,7 +21,7 @@
 </script>
 
 <label class="btn btn-ghost btn-circle swap swap-rotate p-4">
-  <input type="checkbox" class="theme-controller" bind:checked on:change={toggleTheme} value="light" />
+  <input type="checkbox" class="theme-controller" bind:checked onchange={toggleTheme} value="cupcake" />
 
    <Moon 
     class="swap-on w-8 h-8 fill-current"

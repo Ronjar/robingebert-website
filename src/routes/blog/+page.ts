@@ -1,16 +1,18 @@
+import type { Site } from '$lib/types/site';
+import { fetchSites } from '$lib/fetchSites';
+
 export const prerender = true;
 
-import fs from 'fs';
-import path from 'path';
+export async function load() {
+  const files = await fetchSites();
 
-export function load() {
-  const contentDir = path.resolve('src/site/blog');
-  const files = fs.readdirSync(contentDir)
-    .filter((f) => f.endsWith('.md') || f.endsWith('.mdx'))
-    .map((file) => ({
-      slug: file.replace(/\.(md|mdx)$/, ''),
-      // optional: lies frontmatter aus, sortiere nach Datum etc.
-    }));
+  const posts: Site[] = Array.isArray(files)
+    ? files
+    : Object.values(files);
 
-  return { posts: files };
+  posts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  return { posts };
 }

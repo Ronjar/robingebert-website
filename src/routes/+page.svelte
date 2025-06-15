@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
   import HeroCard from '$lib/components/HeroCard.svelte';
   const avatar = '/images/profile.jpg';
@@ -11,13 +13,15 @@
 
 <div class="flex flex-col items-center justify-evenly min-h-[90vh] p-4">
   <HeroCard
-    {avatar}
-    {name}
-    {subtitle}
-    {description}
-    {instagramUrl}
-    {githubUrl}
-    {mail}
+    data={{
+      avatar,
+      name,
+      subtitle,
+      description,
+      instagramUrl,
+      githubUrl,
+      mail
+    }}
   />
   <div>
     
