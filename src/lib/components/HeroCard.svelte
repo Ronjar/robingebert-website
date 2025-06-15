@@ -25,10 +25,10 @@
                 target="_blank"
                 rel="noopener"
                 aria-label="Instagram"
-                class="hover:scale-110 animate-wiggle transition-colors animation-delay-200"
+                class="btn btn-accent btn-lg btn-circle transition duration-300 hover:scale-110 animate-wiggle animation-delay-200"
             >
             <Instagram
-                class="w-8 h-8 text-accent transition-colors" />
+                class="w-6 h-6 transition-colors" />
             </a>
 
 
@@ -37,10 +37,10 @@
                 target="_blank"
                 rel="noopener"
                 aria-label="GitHub"
-                class="hover:scale-110 animate-wiggle transition-colors animation-delay-400"
+                class="btn btn-secondary btn-lg btn-circle transition duration-300 hover:scale-110 animate-wiggle animation-delay-400"
             >
             <Github
-                class="w-8 h-8 text-secondary transition-colors" />
+                class="w-6 h-6 transition-colors" />
             </a>
             {#if data.mail}
             <a
@@ -48,11 +48,11 @@
                 target="_blank"
                 rel="noopener"
                 aria-label="Email"
-                class="hover:scale-110 animate-wiggle transition-colors animation-delay-600"
+                class="btn btn-primary btn-lg btn-circle transition duration-300 hover:scale-110 animate-wiggle animation-delay-600"
                 >
 
             <Mail
-                class="w-8 h-8 text-primary transition-colors" />
+                class="w-6 h-6 transition-colors" />
             </a>
             {/if}
         </div>

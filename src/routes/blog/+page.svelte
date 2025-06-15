@@ -31,6 +31,9 @@
   }
 </script>
 
+<svelte:head>
+	<title>My Blog</title>
+</svelte:head>
 <div class="max-w-3xl mx-auto py-8 px-4">
   <h1 class="text-3xl font-bold">My Blog</h1>
   <p class="text-base-content/60 mb-4">
@@ -46,9 +49,9 @@
     />
 
     <form class="filter">
-      <input class="btn btn-square" type="reset" value="×"/>
+      <input class="btn btn-square" type="reset" value="×" aria-label="Remove tag selection" role="searchbox"/>
       {#each allTags as tag}
-        <input class="btn" type="radio" name="tags" aria-label={tag} onclick={() => setTag(tag)} />
+        <input class="btn" type="radio" name="tags" aria-label={tag} onclick={() => setTag(tag)} role="searchbox"/>
       {/each}
     </form>
   </div>

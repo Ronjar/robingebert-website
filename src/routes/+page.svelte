@@ -11,6 +11,9 @@
   const mail = 'dev@robingebert.com';
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
 <div class="flex flex-col items-center justify-evenly min-h-[90vh] p-4">
   <HeroCard
     data={{

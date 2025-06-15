@@ -20,16 +20,16 @@
   }
 </script>
 
-<label class="btn btn-ghost btn-circle swap swap-rotate p-4">
-  <input type="checkbox" class="theme-controller" bind:checked onchange={toggleTheme} value="cupcake" />
+<label class="btn btn-ghost btn-circle swap swap-rotate p-4" role="form" aria-label="Toggle theme">
+  <input type="checkbox" class="theme-controller" bind:checked onchange={toggleTheme} value="winter" aria-label="Light / Dark theme toggle" />
 
    <Moon 
-    class="swap-on w-8 h-8 fill-current"
+    class="swap-on w-6 h-6 fill-current"
     size={24}
   />
 
   <Sun 
-    class="swap-off w-8 h-8 fill-current"
+    class="swap-off w-6 h-6 fill-current"
     size={24}
   />
 </label>

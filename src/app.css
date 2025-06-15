@@ -2,8 +2,12 @@
 
 @plugin "daisyui" {
 
-  themes: cupcake, dracula --default;
+  themes: winter, dracula --default;
 
+}
+
+@plugin "@tailwindcss/typography" {
+  
 }
 
 @theme {
