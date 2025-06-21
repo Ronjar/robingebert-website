@@ -2,7 +2,7 @@
 
 <script lang="ts">
   import HeroCard from '$lib/components/HeroCard.svelte';
-  const avatar = '/images/profile.jpg';
+  const avatar = '/img/site/profile.jpg';
   const name = 'Robin Gebert';
   const subtitle = 'Teaching student and developer from Stuttgart, Germany';
   const description = 'As a teaching student, I am passionate about education and technology. I love to share knowledge and help others learn. In my free time, I enjoy coding, exploring new technologies, and contributing to open-source projects.';

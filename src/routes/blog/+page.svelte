@@ -43,7 +43,7 @@
   <div class="mb-8">
     <input
       type="text"
-      placeholder="Suche nach Titel…"
+      placeholder="Search by title"
       bind:value={searchQuery}
       class="input input-bordered w-full mb-4"
     />

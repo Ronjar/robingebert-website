@@ -17,6 +17,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/typography": "^0.5.16",
 		"daisyui": "^5.0.43",
+		"shiki": "^3.7.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
@@ -24,9 +25,14 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.511.0",
+		"@rehype-pretty/transformers": "^0.13.2",
+		"@shikijs/transformers": "^3.7.0",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@tailwindcss/vite": "^4.1.8",
 		"mdsvex": "^0.12.6",
+		"node-html-parser": "^7.0.1",
+		"shiki-transformer-copy-button": "^0.0.5",
+		"svelte-zoo": "^0.4.19",
 		"tailwindcss": "^4.1.8"
 	}
 }
