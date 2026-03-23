@@ -1,10 +1,10 @@
 import type { Site } from '$lib/types/site';
-import { fetchSites } from '$lib/fetchSites';
+import { fetchBlogs } from '$lib/fetchSites';
 
 export const prerender = true;
 
 export async function load() {
-  const files = await fetchSites();
+  const files = await fetchBlogs();
 
   const posts: Site[] = Array.isArray(files)
     ? files

@@ -4,7 +4,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import mdsvexConfig from './mdsvex.config.mjs';
 import fs from 'fs';
 
-const contentDir = 'src/site/blog';
+const contentDir = 'src/site/';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,9 +16,12 @@ const config = {
 		prerender: {
 			entries: [
 				"*",
-				...fs.readdirSync(contentDir)
+				...fs.readdirSync(contentDir + "blog")
 					.filter(file => (file.endsWith('.md') || file.endsWith('.mdx')))
-					.map(file => `/blog/${file.replace('.mdx', '').replace('.md', '')}`)
+					.map(file => `/blog/${file.replace('.mdx', '').replace('.md', '')}`),
+				...fs.readdirSync(contentDir + "pages")
+					.filter(file => (file.endsWith('.md') || file.endsWith('.mdx')))
+					.map(file => `/p/${file.replace('.mdx', '').replace('.md', '')}`)
 			],
 		},
 	}
