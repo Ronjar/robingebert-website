@@ -27,7 +27,7 @@ Bei Fragen zum Datenschutz dieser App kannst Du den Entwickler unter folgender A
 # English Version
 
 ## 1. General Information
-This application serves as a third-party client for the **[WLB Riserva](`https://wlbriserva.wlb-stuttgart.de`)** website. This policy explains how data is processed when you use this app.
+This application serves as a third-party client for the **[WLB Riserva](https://wlbriserva.wlb-stuttgart.de)** website. This policy explains how data is processed when you use this app.
 
 ## 2. Data Collection and Storage
 **The app itself does not collect, store, or transmit any personal data to our own servers.** We do not use any tracking tools or analytics. All data processing occurs directly between your device and the third-party services.
