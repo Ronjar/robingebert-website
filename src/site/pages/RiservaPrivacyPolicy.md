@@ -4,7 +4,7 @@ description: Dies ist die Datenschutzerklärung für Riserva, eine Android-App z
 ---
 
 ## 1. Allgemeine Informationen
-Diese Anwendung dient als Drittanbieter-Client für die Website **[WLB Riserva](`https://wlbriserva.wlb-stuttgart.de`)**. Diese Erklärung erläutert, wie Daten verarbeitet werden, wenn Du diese App nutzt.
+Diese Anwendung dient als Drittanbieter-Client für die Website **[WLB Riserva](https://wlbriserva.wlb-stuttgart.de)**. Diese Erklärung erläutert, wie Daten verarbeitet werden, wenn Du diese App nutzt.
 
 ## 2. Datenerhebung und -speicherung
 **Die App selbst erhebt, speichert oder übermittelt keine personenbezogenen Daten an unsere eigenen Server.** Wir verwenden keine Tracking-Tools oder Analysedienste. Die gesamte Datenverarbeitung erfolgt direkt zwischen Ihrem Gerät und dem Dienst der WLB (Drittanbieter).
