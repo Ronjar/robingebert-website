@@ -32,7 +32,6 @@
 		"mdsvex": "^0.12.6",
 		"node-html-parser": "^7.0.1",
 		"shiki-transformer-copy-button": "^0.0.5",
-		"svelte-zoo": "^0.4.19",
 		"tailwindcss": "^4.1.8"
 	}
 }
